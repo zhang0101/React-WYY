@@ -1,0 +1,79 @@
+@import "~@/assets/style/index";
+
+@leftWidth: 727px;
+.home {
+  .wrap {
+    .centerH();
+    .wrap-content {
+      .content();
+      background-color: @white-color;
+      .left {
+        width: @leftWidth;
+        padding: @font-size-lgs;
+        border-left: 1px solid @border-color-base;
+        .navs {
+          .centerV();
+          align-items: baseline;
+          justify-content: space-between;
+          padding: 0 10px 10px 10px;
+          border-bottom: 2px solid @red-color;
+          margin-bottom: 15px;
+          a {
+            color: inherit;
+            font-size: @font-size-lg;
+            .anticon-arrow-right {
+              font-size: @font-size-base;
+            }
+          }
+          .navs_l {
+            .centerV();
+            align-items: baseline;
+            justify-content: space-between;
+            h2 {
+              margin-bottom: 0;
+              line-height: 1;
+              i {
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                background-color: @white-color;
+                border: 3px solid @red-color;
+                border-radius: 50%;
+                margin-right: 10px;
+              }
+              a {
+                color: inherit;
+                font-weight: 500;
+                font-size: 20px;
+              }
+            }
+            .navs_tags {
+              a {
+                color: inherit;
+                font-size: @font-size-base;
+                display: inline-block;
+                padding: 0 12px;
+                border-right: 1px solid @border-color-base;
+                &:last-child {
+                  border: none;
+                }
+              }
+            }
+          }
+        }
+        .sheetList {
+          display: flex;
+          flex-wrap: wrap;
+          .item {
+            margin-right: 42px;
+          }
+        }
+      }
+      .right {
+        width: calc(100% - @leftWidth - 3px);
+        border-left: 1px solid @border-color-base;
+        border-right: 1px solid @border-color-base;
+      }
+    }
+  }
+}
